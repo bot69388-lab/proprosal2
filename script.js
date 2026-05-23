@@ -20,7 +20,6 @@ window.addEventListener("DOMContentLoaded", () => {
   setupLoginForm();
   setupProposalButtons();
   setupJourneyGallery();
-  setupFinalHeart();
 
   // Highlight initial nav indicator for Page 1
   updateNavIndicators(1);
@@ -226,7 +225,7 @@ function setupLoginForm() {
       
       // Attempt to play music since user interacted by submit
       playMusic();
-      showToast("Access granted! Happy anniversary... ❤️");
+      showToast("Access granted... ❤️");
       navigateToPage(2);
     } else {
       // Small cute warning errors
@@ -465,16 +464,5 @@ function setupJourneyGallery() {
     if (e.target === journeyOverlay) {
       journeyOverlay.classList.remove("show");
     }
-  });
-}
-
-// 9. FINAL HEART DOUBLE-PULSE
-function setupFinalHeart() {
-  const finalHeart = document.getElementById('cute-final-heart');
-  if (!finalHeart) return;
-  
-  finalHeart.addEventListener('click', (e) => {
-    triggerHeartExplosion(e);
-    showToast("Heart returned! Infinite loops of warm hugs sent... 🥰❤️");
   });
 }
