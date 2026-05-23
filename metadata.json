@@ -1,0 +1,6 @@
+{
+  "name": "Romantic Love Confession",
+  "description": "An adorable, interactive 3-page love confession website with cute animations, floating hearts, page transitions, and a heartfelt message for My Love.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
